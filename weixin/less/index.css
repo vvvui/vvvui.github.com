@@ -1,0 +1,318 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+ul,
+ol,
+dl,
+dd,
+dt {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+a,
+img,
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+.clearFix {
+  *zoom: 1;
+  /* for IE 6 7 */
+}
+.clearFix:before {
+  content: " ";
+  display: block;
+}
+.clearFix:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+.mainWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 1rem;
+}
+.mainWrap .page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+.mainWrap .page .inviteTitle {
+  padding: 0 15px;
+  height: 2.857rem;
+  line-height: 2.857rem;
+  position: relative;
+  font-size: 1.214rem;
+  text-align: left;
+  color: #555555;
+}
+.mainWrap .page .singleArea {
+  height: 2.857rem;
+  padding: 0 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+  margin-bottom: 15px;
+}
+.mainWrap .page .singleArea .inviteInput {
+  margin-top: 0.714rem;
+  height: 1.428rem;
+  line-height: 1.428rem;
+  font-size: 1rem;
+  color: #333333;
+  width: 100%;
+}
+.mainWrap .page .groupArea {
+  background-color: #ffffff;
+  border-top: 1px solid #ededed;
+}
+.mainWrap .page .groupArea .groupItem {
+  height: 2.857rem;
+  padding: 0 15px;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+}
+.mainWrap .page .groupArea .groupItem .itemFlowText {
+  position: absolute;
+  font-size: 1.142rem;
+  top: 0.714rem;
+  left: 12rem;
+  color: #333333;
+}
+.mainWrap .page .groupArea .groupItem .itemFlowRightText {
+  position: absolute;
+  right: 15px;
+  top: 0.9rem;
+  font-size: 1rem;
+  color: #333333;
+}
+.mainWrap .page .itemTitle {
+  float: left;
+  margin-top: 0.714rem;
+  height: 1.428rem;
+  line-height: 1.428rem;
+  font-size: 1.142rem;
+  width: 6rem;
+  color: #333333;
+}
+.mainWrap .page .itemInput {
+  float: left;
+  margin-top: 0.714rem;
+  height: 1.428rem;
+  line-height: 1.428rem;
+  font-size: 1.142rem;
+  width: 14rem;
+  color: #389229;
+}
+.mainWrap .page .colorDefault {
+  color: #333333;
+}
+.mainWrap .page .arrowDown {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -8px;
+}
+.mainWrap .page .arrowDown img {
+  width: 16px;
+}
+.mainWrap .page .acButton {
+  margin: 60px 15px;
+  border-radius: 3px;
+  height: 2.857rem;
+  line-height: 2.857rem;
+  color: #ffffff;
+  background-color: #389229;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.mainWrap .yellowTip {
+  height: 2.857rem;
+  width: 100%;
+  line-height: 2.857rem;
+  text-align: center;
+  position: relative;
+  font-size: 0.857rem;
+  background: #ffffdc;
+  color: #555555;
+}
+.mainWrap .yellowTip .tipIcon {
+  padding-left: 15px;
+  float: left;
+  padding-right: 5px;
+  padding-top: 4px;
+}
+.mainWrap .yellowTip .tipIcon img {
+  width: 17px;
+}
+.mainWrap .yellowTip .tipText {
+  float: left;
+  width: 80%;
+}
+.mainWrap .yellowTip .tipText a {
+  color: #2ab24c;
+}
+.mainWrap .yellowTip .tipRight {
+  float: left;
+  padding-top: 4px;
+  padding-left: 5px;
+}
+.mainWrap .yellowTip .tipRight img {
+  width: 8px;
+}
+.mainWrap .alphaBg {
+  background: none;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 0 0 15px;
+  color: #a9a9a9;
+  text-align: left;
+}
+.mainWrap .idCardGroup {
+  padding: 20px 20px 10px 20px;
+}
+.mainWrap .idCardTextGroup {
+  padding: 0px 20px;
+  color: #333333;
+}
+.mainWrap .idCardTextGroup .carText {
+  width: 8.928rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.mainWrap .idCard {
+  background-color: #ffffff;
+  border: 1px solid #92cb89;
+  width: 8.928rem;
+  position: relative;
+}
+.mainWrap .idCard img {
+  width: 8.928rem;
+}
+.mainWrap .idCardLeft {
+  float: left;
+}
+.mainWrap .idCardRight {
+  float: right;
+}
+.mainWrap .sexRadio {
+  float: left;
+  line-height: 2.857rem;
+  padding-right: 5px;
+}
+.mainWrap .sexRadio img {
+  width: 10px;
+}
+.mainWrap .backBar {
+  width: 100%;
+  height: 2.857rem;
+  line-height: 2.857rem;
+  text-align: center;
+  position: relative;
+  font-size: 1.07rem;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #555555;
+}
+.mainWrap .backBar .backIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -1.071rem;
+}
+.mainWrap .backBar .backIcon img {
+  padding: 5px;
+  width: 12px;
+}
+.mainWrap .iFile {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 440px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 480px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 520px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 560px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 560px) and (max-width: 600px) {
+  html {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  html {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
