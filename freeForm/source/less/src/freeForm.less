@@ -1,0 +1,568 @@
+@width: 1000px;
+@height: 500px;
+.backgroundFit(@url) {
+	background-size: cover;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=@url,sizingMethod='scale');
+	background-repeat: no-repeat;
+}
+
+.freeForm {
+	width: @width;
+	height: @height;
+	position: absolute;
+	left: 60px;
+	margin-left: 0;
+	top: 60px;
+	margin-top: 0;
+	.controlArea {
+		width: 200px;
+		height: @height;
+		background-color: #ffffff;
+		float: left;
+		position: relative;
+	}
+	.formArea {
+		width: @width - 200px - 10px;
+		height: @height;
+		background-color: #ffffff;
+		position: absolute;
+		left: 210px;
+	}
+	.fLabel {
+		height: 38px;
+		padding: 0px;
+		line-height: 40px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		text-align: left;
+		z-index: 2;
+	}
+	.fInput {
+		width: 170px;
+		height: 22px;
+		padding: 3px;
+		position: absolute;
+		top: 56px;
+		left: 10px;
+		z-index: 2;
+	}
+	.fTextArea {
+		width: 172px;
+		height: 72px;
+		padding: 3px;
+		position: absolute;
+		top: 100px;
+		left: 10px;
+		resize: none;
+		z-index: 2;
+	}
+	.fSelecter {
+		width: 180px;
+		height: 30px;
+		margin: 0px;
+		padding: 0px;
+		position: absolute;
+		top: 190px;
+		left: 10px;
+		z-index: 3;
+	}
+	.fSubmit {
+		width: 180px;
+		height: 40px;
+		position: absolute;
+		top: 230px;
+		left: 10px;
+		z-index: 2;
+	}
+	.fCheckbox {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 280px;
+		left: 10px;
+		z-index: 2;
+		margin: 0px;
+		padding: 0px;
+	}
+	.fCheckboxText {
+		position: absolute;
+		top: 280px;
+		left: 40px;
+	}
+	.fRadio {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 310px;
+		left: 10px;
+		z-index: 2;
+		margin: 0px;
+		padding: 0px;
+	}
+	.fRadioText {
+		position: absolute;
+		top: 310px;
+		left: 40px;
+	}
+	.fFile {
+		width: 180px;
+		height: 30px;
+		position: absolute;
+		top: 345px;
+		left: 10px;
+		z-index: 2;
+		border: 0px;
+	}
+	.fFrame {
+		width: 172px;
+		height: 72px;
+		padding: 3px;
+		position: absolute;
+		top: 385px;
+		left: 10px;
+		border: 1px solid #f2f2f2;
+		z-index: 1;
+	}
+	.blueBk {
+		border: 1px solid #00E3E3;
+	}
+}
+
+.setMask {
+	position: absolute;
+	width: 100%;
+	height: 100%; 
+	background-color: #000000;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	z-index: 10000;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.setContent {
+	width: 400px;
+	height: 100%;
+	border-left: 1px solid #00E3E3;
+	position: fixed;
+	right: -400px;
+	top: 0px;
+	display: none;
+	z-index: 10001;
+	background-color: #ffffff;
+	.setClose {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+		.backgroundFit('../images/delIcon.png');
+	}
+	.setTitle {
+		border-bottom: 1px solid #f2f2f2;
+		ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+		}
+		li {
+			padding: 10px 25px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 14px;
+			float: left;
+			cursor: pointer;
+			border-right: 1px solid #f2f2f2;
+		}
+		.checked {
+			color: #00E3E3;
+		}
+	}
+	.changeContent {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		display: none;
+		.setNr {
+			width: 360px;
+			height: 200px;
+			position: absolute;
+			overflow: auto;
+			top: 70px;
+			left: 20px;
+		}
+	}
+	.setHtmlName {
+		font-size: 14px;
+		position: absolute;
+		top: 80px;
+		left: 50px;
+	}
+	.setHtmlInput {
+		font-size: 14px;
+		position: absolute;
+		top: 80px;
+		left: 100px;
+		width: 200px;
+		height: 20px;
+		margin: 0px;
+		padding: 5px;
+	}
+	.setValName {
+		font-size: 14px;
+		position: absolute;
+		top: 130px;
+		left: 50px;
+	}
+	.setValInput {
+		font-size: 14px;
+		position: absolute;
+		top: 130px;
+		left: 100px;
+		width: 200px;
+		height: 20px;
+		margin: 0px;
+		padding: 5px;
+	}
+	.setName {
+		font-size: 14px;
+		position: absolute;
+		top: 180px;
+		left: 50px;
+	}
+	.setTextArea {
+		font-size: 16px;
+		position: absolute;
+		top: 180px;
+		left: 100px;
+		width: 200px;
+		height: 120px;
+		border: 1px solid #cccccc;
+		margin: 0px;
+		padding: 5px;
+	}
+	.param2 {
+		top: 330px;
+	}
+	.setButton {
+		font-size: 16px;
+		position: absolute;
+		width: 200px;
+		height: 40px;
+		line-height:40px;
+		text-align: center;
+		background-color: #00E3E3;
+		border-radius: 5px;
+		color: #ffffff;
+		bottom: 30px;
+		left: 100px;
+		cursor: pointer;
+	}
+}
+
+#setStyleMenu {
+	display: block;
+}
+
+.menuGroup {
+	position: relative;
+	width: 330px;
+	height: 80px;
+	border: 1px solid #f2f2f2;
+	margin-bottom: 20px;
+	.title {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		color: #00E3E3;
+	}
+	.t1 {
+		position: absolute;
+		top: 40px;
+		left: 10px;
+		width: 60px;
+		text-align: right;
+	}
+	.t2 {
+		position: absolute;
+		top: 40px;
+		left: 145px;
+	}
+	.in1 {
+		position: absolute;
+		top: 35px;
+		left: 75px;
+		width: 60px;
+		height: 30px;
+	}
+	.t3 {
+		position: absolute;
+		top: 40px;
+		left: 165px;
+		width: 60px;
+		text-align: right;
+	}
+	.t4 {
+		position: absolute;
+		top: 40px;
+		left: 300px;
+	}
+	.in2 {
+		position: absolute;
+		top: 35px;
+		left: 230px;
+		width: 60px;
+		height: 30px;
+	}
+	.tt1 {
+		top: 100px;
+	}
+	.int1 {
+		top: 95px;
+	}
+	.tt2 {
+		top: 145px;
+	}
+	.int2 {
+		top: 140px;
+	}
+	.tt3 {
+		top: 90px;
+	}
+	.int3 {
+		top: 85px;
+	}
+	.select1 {
+		position: absolute;
+		width: 60px;
+		height: 30px;
+		left: 75px;
+	}
+	.checkbox {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		border: 1px solid #f2f2f2;
+		cursor: pointer;
+	}
+	.boxChecked {
+		color: #00E3E3;
+		border: 1px solid #00E3E3;
+	}
+	.checkboxPos1 {
+		top: 45px;
+		left: 30px;
+	}
+	.checkboxPos2 {
+		top: 45px;
+		left: 90px;
+	}
+	.checkboxPos3 {
+		top: 45px;
+		left: 150px;
+	}
+	.checkboxPos4 {
+		top: 45px;
+		left: 210px;
+	}
+}
+
+input,select {
+	line-height: 30px;
+}
+
+.gh1 {
+	height: 185px;
+}
+
+.gh2 {
+	height: 135px;
+}
+
+.delIconImg {
+	background-image: data-uri('../images/delIcon.png');
+}
+
+.componentController {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 1004;
+	display: none;
+}
+
+.saveBtn {
+	width: 200px;
+	height: 35px;
+	line-height: 35px;
+	position: absolute;
+	text-align: center;
+	background-color: #00E3E3;
+	color: #ffffff;
+	top: -35px;
+	left: 0px;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.setIcon {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-image: data-uri('../images/setIcon.png');
+	background-size: 24px 24px;
+	right: -12px;
+	top: -12px;
+	pointer-events: true;
+	z-index: 1005;
+	.backgroundFit('../images/setIcon.png');
+}
+.delIcon {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-size: 24px 24px;
+	left: -12px;
+	bottom: -12px;
+	z-index: 1005;
+	.backgroundFit('../images/delIcon.png');
+}
+.resizeIcon {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-image: data-uri('../images/resizeIcon.png');
+	background-size: 24px 24px;
+	right: -12px;
+	bottom: -12px;
+	z-index: 1005;
+	.backgroundFit('../images/resizeIcon.png');
+}
+
+.ruler {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+}
+
+.rulerMask {
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	z-index: 1003;
+	background-color: #303030;
+}
+
+.rulerH {
+	width: 100%;
+	height: 17px;
+	position: absolute;
+	left: 17px;
+	z-index: 1002;
+	overflow: hidden;
+}
+
+.rulerHContent {
+	width: 200%;
+	height: 17px;
+	position: absolute;
+	background-image: data-uri('../images/rulerH.png');
+}
+
+.rulerV {
+	width: 17px;
+	height: 100%;
+	position: absolute;
+	top: 17px;
+	z-index: 1002;
+	overflow: hidden;
+}
+
+.rulerVTextContent {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 17px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.rulerVContent {
+	width: 17px;
+	height: 200%;
+	position: absolute;
+	background-image: data-uri('../images/rulerV.png');
+}
+
+.rulerVText {
+	font-size: 12px;
+	color: #00E3E3;
+	left: 17px;
+	position: absolute;
+	z-index: 1000;
+}
+
+.rulerHText {
+	font-size: 12px;
+	color: #00E3E3;
+	left: 17px;
+	position: absolute;
+}
+
+.hReferenceLineLock {
+	width: 100%;
+	height: 9px;
+	position: absolute;
+	z-index: 1001;
+	display: none;
+}
+
+.hReferenceLineLockContent {
+	width: 100%;
+	height: 1px;
+	pointer-events: none;
+	background-color: #00E3E3;
+	position: absolute;
+	top: 4px;
+}
+
+.vReferenceLineLock {
+	width: 9px;
+	height: 100%;
+	position: absolute;
+	z-index: 1001;
+	display: none;
+}
+
+.vReferenceLineLockContent {
+	width: 1px;
+	height: 100%;
+	pointer-events: none;
+	background-color: #00E3E3;
+	position: absolute;
+	left: 4px;
+}
+
+.hReferenceLine {
+	width: 100%;
+	height: 1px;
+	background-color: #ffc0cb;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+.vReferenceLine {
+	width: 1px;
+	height: 100%;
+	background-color: #ffc0cb;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}

@@ -1,0 +1,133 @@
+#componentForm {
+	position: absolute;
+	width: 790px;
+	height: 500px;
+	left: 0px;
+	background-color: rgb(255, 255, 255);
+	cursor: auto;
+}
+.input1 {
+	position: absolute;
+	width: 173px;
+	height: 22px;
+	top: 63px;
+	left: 43px;
+	z-index: 2;
+	line-height: 30px;
+}
+.textarea1 {
+	position: absolute;
+	width: 172px;
+	height: 72px;
+	top: 105px;
+	left: 43px;
+	background-color: rgb(255, 238, 237);
+	resize: none;
+	z-index: 2;
+	overflow: auto;
+}
+.label1 {
+	position: absolute;
+	width: 75px;
+	height: 38px;
+	top: 201px;
+	left: 45px;
+	z-index: 2;
+	line-height: 40px;
+	text-align: left;
+}
+.select1 {
+	position: absolute;
+	width: 180px;
+	height: 30px;
+	top: 63px;
+	left: 234px;
+	z-index: 3;
+}
+.submit1 {
+	position: absolute;
+	width: 180px;
+	height: 40px;
+	top: 236px;
+	left: 234px;
+	background-color: rgb(221, 221, 221);
+	z-index: 2;
+	line-height: 30px;
+	text-align: center;
+}
+.input2 {
+	position: absolute;
+	width: 172px;
+	height: 114px;
+	top: 63px;
+	left: 425px;
+	z-index: 2;
+	line-height: 30px;
+}
+.submit2 {
+	position: absolute;
+	width: 180px;
+	height: 40px;
+	top: 236px;
+	left: 42px;
+	background-color: rgb(221, 221, 221);
+	z-index: 2;
+	line-height: 30px;
+	text-align: center;
+}
+.textarea2 {
+	position: absolute;
+	width: 172px;
+	height: 72px;
+	top: 236px;
+	left: 425px;
+	resize: none;
+	z-index: 2;
+	overflow: auto;
+}
+.textarea3 {
+	position: absolute;
+	width: 172px;
+	height: 72px;
+	top: 105px;
+	left: 234px;
+	resize: none;
+	z-index: 2;
+	overflow: auto;
+}
+.checkbox3 {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 317px;
+	left: 43px;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 2;
+	border-left: 0px none rgb(0, 0, 0);
+	border-right: 0px none rgb(0, 0, 0);
+	border-top: 0px none rgb(0, 0, 0);
+	border-bottom: 0px none rgb(0, 0, 0);
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 30px;
+}
+.checkbox4 {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 317px;
+	left: 234px;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 10;
+	border-left: 0px none rgb(0, 0, 0);
+	border-right: 0px none rgb(0, 0, 0);
+	border-top: 0px none rgb(0, 0, 0);
+	border-bottom: 0px none rgb(0, 0, 0);
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 30px;
+}

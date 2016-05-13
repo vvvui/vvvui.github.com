@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>freeForm</title>
+		<link rel="stylesheet" type="text/css" href="../css/com/vvCom.css">
+		<link rel="stylesheet" type="text/css" href="../css/src/freeForm.css">
+		<!-- js -->
+		<script type="text/javascript" src="../js/ext/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/com/vvCom.js"></script>
+		<script type="text/javascript" src="../js/control/freeForm.js"></script>
+	</head>
+	<body>
+		<div class="freeForm clearFix" id="freeForm">
+			<div class="controlArea" id="componentSource">
+				<div class="saveBtn" id="saveBtn">保存</div>
+				<div id="label" class="fLabel unSelect">label</div>
+				<input id="input" class="fInput" value="input" readonly="true">
+				<textarea id="textarea" class="fTextArea" readonly="true">textarea</textarea>
+				<select id="select" class="fSelecter">
+					<option>select</option>
+				</select>
+				<input id="submit" class="fSubmit" value="submit" type="submit">
+				<input id="checkbox" class="fCheckbox" type="checkbox">
+				<input id="radio" class="fRadio" type="radio">
+				<input id="file" class="fFile" type="file">
+				<div class="fRadioText">radio</div>
+				<div class="fCheckboxText">checkbox</div>
+				<div id="frame" class="fFrame">group</div>
+			</div>
+			<div class="formArea" id="componentForm">
+				<!-- componentController -->
+				<div class="setIcon" id="gSetIcon"></div>
+				<div class="resizeIcon" id="gResizeIcon"></div>
+				<div class="componentController" id='componentController'>
+					<div class="setIcon" id="setIcon"></div>
+					<div class="delIconImg delIcon" id="delIcon"></div>
+					<div class="resizeIcon" id="resizeIcon"></div>
+				</div>
+				<!-- componentController end -->
+			</div>
+		</div>
+		
+		<!-- ruler -->
+		<div class="ruler" id="ruler">
+			<div class="rulerMask"></div>
+			<div class="rulerH" id="rulerH">
+				<div class="rulerHContent" id="rulerHContent"></div>
+			</div>
+			<div class="rulerV" id="rulerV">
+				<div class="rulerVContent" id="rulerVContent"></div>
+			</div>
+			<div class="rulerVTextContent"  id="rulerVTextContent"></div>
+		</div>
+		<!-- ruler end -->
+		
+		<!-- reference line -->
+		<div class="hReferenceLine" id="hReferenceLine"></div>
+		<div class="vReferenceLine" id="vReferenceLine"></div>
+		<!-- reference line end -->
+		
+		<!-- setter -->
+		<div class="setMask" id="setMask"></div>
+		<div class="setContent" id="setContent">
+			<div class="delIconImg setClose" id="setClose"></div>
+			<div class="setTitle" id="setTitle">
+				<ul class="clearFix">
+					<li class="setBtn checked" id="setStyleBtn">样式</li>
+					<li class="setBtn" id="setAttrBtn">属性</li>
+					<li class="setBtn" id="setCodeBtn">源码</li>
+				</ul>
+			</div>
+			<div class="changeContent" id="setStyleMenu">
+				<div class="setNr">
+					<!-- setStyle -->
+					<div class="menuGroup">
+						<div class="title">尺寸</div>
+						<div class="t1">宽度：</div>
+						<input class="in1">
+						<div class="t2">px</div>
+						<div class="t3">高度：</div>
+						<input class="in2">
+						<div class="t4">px</div>
+					</div>
+					<div class="menuGroup">
+						<div class="title">位置</div>
+						<div class="t1">左边距：</div>
+						<input class="in1">
+						<div class="t2">px</div>
+						<div class="t3">上边距：</div>
+						<input class="in2">
+						<div class="t4">px</div>
+					</div>
+					<div class="menuGroup gh1">
+						<div class="title">边框</div>
+						<div class="checkbox checkboxPos1">上</div>
+						<div class="checkbox checkboxPos2 boxChecked">下</div>
+						<div class="checkbox checkboxPos3">左</div>
+						<div class="checkbox checkboxPos4">右</div>
+						<div class="t1 tt1">尺寸：</div>
+						<input class="in1 int1">
+						<div class="t2 tt1">px</div>
+						<div class="t3 tt1">颜色：</div>
+						<input class="in2 int1">
+						<div class="t1 tt2">样式：</div>
+						<select class="select1 int2">
+							<option>实线</option>
+							<option>虚线</option>
+						</select>
+					</div>
+					<div class="menuGroup">
+						<div class="title">背景</div>
+						<div class="t1">颜色：</div>
+						<input class="in1">
+						<div class="t3">图片：</div>
+						<input class="in2">
+					</div>
+					<div class="menuGroup gh2">
+						<div class="title">文字</div>
+						<div class="t1">颜色：</div>
+						<input class="in1">
+						<div class="t3">大小：</div>
+						<input class="in2">
+						<div class="t4">px</div>
+						<div class="t1 tt3">对齐：</div>
+						<select class="select1 int3">
+							<option>左</option>
+							<option>中</option>
+							<option>右</option>
+						</select>
+						<div class="t3 tt3">行高：</div>
+						<input class="in2 int3">
+						<div class="t4 tt3">px</div>
+					</div>
+					<div class="menuGroup gh2">
+						<div class="title">内边距</div>
+						<div class="t1">上：</div>
+						<div class="t2">px</div>
+						<input class="in1">
+						<div class="t3">下：</div>
+						<input class="in2">
+						<div class="t4">px</div>
+						<div class="t1 tt3">左：</div>
+						<input class="in1 int3">
+						<div class="t2 tt3">px</div>
+						<div class="t3 tt3">右：</div>
+						<input class="in2 int3">
+						<div class="t4 tt3">px</div>
+					</div>
+					<div class="menuGroup gh2">
+						<div class="title">外边距</div>
+						<div class="t1">上：</div>
+						<div class="t2">px</div>
+						<input class="in1">
+						<div class="t3">下：</div>
+						<input class="in2">
+						<div class="t4">px</div>
+						<div class="t1 tt3">左：</div>
+						<input class="in1 int3">
+						<div class="t2 tt3">px</div>
+						<div class="t3 tt3">右：</div>
+						<input class="in2 int3">
+						<div class="t4 tt3">px</div>
+					</div>
+					<div class="menuGroup">
+						<div class="title">其他</div>
+						<div class="t1">透明度：</div>
+						<input class="in1">
+						<div class="t3">圆角：</div>
+						<input class="in2">
+						<div class="t4">px</div>
+					</div>
+					<!-- setStyle end -->
+				</div>
+			</div>
+			<div class="changeContent" id="setAttrMenu">
+				<div class="setNr">
+				<!-- setAttr -->
+					<div class="menuGroup gh2">
+						<div class="title">基本属性</div>
+						<div class="t1">id：</div>
+						<input class="in1">
+						<div class="t3">class：</div>
+						<input class="in2">
+						<div class="t1 tt3">name：</div>
+						<input class="in1 int3">
+						<div class="t3 tt3">type：</div>
+						<input class="in2 int3">
+					</div>
+					<div class="menuGroup">
+						<div class="title">属性值</div>
+						<div class="t1">默认值：</div>
+						<input class="in1">
+						<div class="t3">导语：</div>
+						<input class="in2">
+					</div>
+				<!-- setAttr end -->
+				</div>
+			</div>
+			<div class="changeContent" id="setCodeMenu">
+				<div class="setHtmlName">html:</div>
+				<input class="setHtmlInput" id="setHtml">
+				<div class="setValName">value:</div>
+				<input class="setValInput" id="setVal">
+				<div class="setName">style:</div>
+				<textarea class="setTextArea" id="setStyle" name="setStyle"></textarea>
+				<div class="setName param2">attr:</div>
+				<textarea class="setTextArea param2" id="setAttr" name="setAttr"></textarea>
+			</div>
+			<div class="setButton" id="setSave">确定</div>
+		</div>
+		<!-- setter end -->
+		
+	</body>
+</html>
