@@ -4,7 +4,7 @@ body {
   height: 100%;
   background-color: #ffffff;
   font-size: 14px;
-  color: #000000;
+  color: #333333;
   background-color: #f2f2f2;
 }
 * {
@@ -38,7 +38,7 @@ textarea {
   text-decoration: none;
 }
 a:hover {
-  color: #000000;
+  color: #333333;
 }
 .clearFix {
   *zoom: 1;
@@ -135,8 +135,33 @@ a:hover {
   width: 14rem;
   color: #389229;
 }
+.mainWrap .page .itemInputCode {
+  font-size: 0.857rem;
+  width: 6rem;
+}
+.mainWrap .page .getCodeButton {
+  font-size: 0.857rem;
+  width: 6rem;
+  color: #ffffff;
+  text-align: center;
+  height: 2.142rem;
+  line-height: 2.142rem;
+  background-color: #8fc490;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 0.357rem;
+}
+.mainWrap .page .itemInputMargin {
+  margin-left: 1rem;
+  width: 13rem;
+}
 .mainWrap .page .colorDefault {
   color: #333333;
+}
+.mainWrap .page .colorGray {
+  color: #999999;
 }
 .mainWrap .page .arrowDown {
   position: absolute;
@@ -198,7 +223,7 @@ a:hover {
   line-height: 1.2rem;
   height: auto;
   box-sizing: border-box;
-  padding: 10px 0 0 15px;
+  padding: 10px 0 0 0px;
   color: #a9a9a9;
   text-align: left;
 }
@@ -236,6 +261,110 @@ a:hover {
 }
 .mainWrap .sexRadio img {
   width: 10px;
+}
+.mainWrap .idCardShow {
+  margin: 15px 15px 0px 15px;
+  background: url("../img/idCardShowBg.jpg");
+  background-size: 100%;
+  height: 4.128rem;
+  width: 19.286rem;
+  background-repeat: no-repeat;
+  padding: 1.8rem 0 0 1.428rem;
+}
+.mainWrap .idCardShow .idCardShowTextG {
+  height: 1.571rem;
+  font-size: 1rem;
+}
+.mainWrap .idCardShow .idCardShowTextG .textL {
+  width: 5rem;
+  float: left;
+}
+.mainWrap .idCardShow .idCardShowTextG .textR {
+  float: left;
+  color: #999999;
+}
+.mainWrap .faceGroup {
+  padding: 0.857rem 0 0 1.071rem;
+}
+.mainWrap .faceGroup .facePic {
+  float: left;
+  width: 6.5rem;
+  margin-right: 0.571rem;
+  position: relative;
+  text-align: center;
+}
+.mainWrap .faceGroup .facePic img {
+  width: 6.5rem;
+  border: 1px solid #92cb89;
+}
+.mainWrap .cardBk {
+  padding: 15px 0;
+}
+.mainWrap .cardBk .imgArea {
+  width: 12.857rem;
+  margin: 0px auto;
+  position: relative;
+}
+.mainWrap .cardBk .imgArea img {
+  width: 12.857rem;
+  border: 1px solid #92cb89;
+}
+.mainWrap .cardText {
+  text-align: center;
+  position: relative;
+}
+.mainWrap .cardLinkText {
+  text-align: center;
+  padding-top: 1.428rem;
+  color: #33a636;
+}
+.mainWrap .cardLinkText a {
+  color: #33a636;
+}
+.mainWrap .showDebitCard {
+  margin: 15px;
+  height: 84px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+}
+.mainWrap .showDebitCard .debitCardContent {
+  margin: 21px 15px;
+  height: 42px;
+  position: relative;
+}
+.mainWrap .showDebitCard .debitCardContent img {
+  width: 35px;
+}
+.mainWrap .showDebitCard .debitCardContent .bankName {
+  position: absolute;
+  left: 45px;
+  top: 0px;
+  font-size: 16px;
+  color: #333333;
+}
+.mainWrap .showDebitCard .debitCardContent .cardName {
+  position: absolute;
+  left: 45px;
+  top: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+.mainWrap .showDebitCard .debitCardContent .changeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #48a13c;
+}
+.mainWrap .showDebitCard .debitCardContent .changeBtn a {
+  color: #48a13c;
+}
+.mainWrap .showDebitCard .debitCardContent .cardNumber {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #48a13c;
+  font-size: 16px;
 }
 .mainWrap .backBar {
   width: 100%;

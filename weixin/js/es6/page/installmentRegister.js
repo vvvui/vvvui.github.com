@@ -21,7 +21,7 @@ var InstallmentRegister = React.createClass({
             <div className="page" style={this.props.style}>
                 <div className="yellowTip clearFix">
                     <div className="tipIcon"><img src="img/tipicon.png"></img></div>
-                    <div className="tipText">温馨提示：下载APP申请会更加顺畅哦，<a href="" target="_blank">去下载</a></div>
+                    <span className="tipText">温馨提示：下载APP申请会更加顺畅哦，<a href="" target="_blank">去下载</a></span>
                     <div className="tipRight"><img src="img/greenrighticon.png"></img></div>
                 </div>
                 <div className="inviteTitle">邀请码</div>

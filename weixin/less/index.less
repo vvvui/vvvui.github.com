@@ -5,7 +5,7 @@ html, body {
 	height: 100%;
 	background-color: #ffffff;
 	font-size: 14px;
-	color: #000000;
+	color: #333333;
 	background-color: #f2f2f2;
 }
 * {
@@ -28,7 +28,7 @@ a,img,button,input,textarea {
 	text-decoration: none;
 }
 a:hover {
-	color: #000000;
+	color: #333333;
 }
 .clearFix {
 	*zoom:1;  /* for IE 6 7 */
@@ -122,8 +122,33 @@ a:hover {
 			width: 14rem;
 			color: #389229;
 		}
+		.itemInputCode {
+			font-size: 0.857rem;
+			width: 6rem;
+		}
+		.getCodeButton {
+			font-size: 0.857rem;
+			width: 6rem;
+			color: #ffffff;
+			text-align: center;
+			height: 2.142rem;
+			line-height: 2.142rem;
+			background-color: #8fc490;
+			border-radius: 3px;
+			cursor: pointer;
+			position: absolute;
+			right: 15px;
+			top: 0.357rem;
+		}
+		.itemInputMargin {
+			margin-left: 1rem;
+			width: 13rem;
+		}
 		.colorDefault {
 			color: #333333;
+		}
+		.colorGray {
+			color: #999999;
 		}
 		.arrowDown {
 			position: absolute;
@@ -186,7 +211,7 @@ a:hover {
 		line-height: 1.2rem;
 		height: auto;
 		box-sizing: border-box;
-		padding: 10px 0 0 15px;
+		padding: 10px 0 0 0px;
 		color: #a9a9a9;
 		text-align: left;
 	}
@@ -223,6 +248,111 @@ a:hover {
 		padding-right: 5px;
 		img {
 			width: 10px;
+		}
+	}
+	.idCardShow {
+		margin: 15px 15px 0px 15px;
+		background: url("../img/idCardShowBg.jpg");
+		background-size: 100%;
+		height: 4.128rem;
+		width: 19.286rem;
+		background-repeat: no-repeat;
+		padding: 1.8rem 0 0 1.428rem;
+		.idCardShowTextG {
+			height: 1.571rem;
+			font-size: 1rem;
+			.textL {
+				width: 5rem;
+				float: left;
+			}
+			.textR {
+				float: left;
+				color: #999999;
+			}
+		}
+	}
+	.faceGroup {
+		padding: 0.857rem 0 0 1.071rem;
+		.facePic {
+			float: left;
+			width: 6.5rem;
+			margin-right: 0.571rem;
+			position: relative;
+			text-align: center;
+			img {
+				width: 6.5rem;
+				border: 1px solid #92cb89;
+			}
+		}
+	}
+	// card select page
+	.cardBk {
+		padding: 15px 0;
+		.imgArea {
+			width: 12.857rem;
+			margin: 0px auto;
+			position: relative;
+			img {
+				width: 12.857rem;
+				border: 1px solid #92cb89;
+			}
+		}
+	}
+	.cardText {
+		text-align: center;
+		position: relative;
+	}
+	.cardLinkText {
+		text-align: center;
+		padding-top: 1.428rem;
+		color: #33a636;
+		a {
+			color: #33a636;
+		}
+	}
+	.showDebitCard {
+		margin: 15px;
+		height: 84px;
+		background-color: #ffffff;
+		border: 1px solid #eaeaea;
+		border-radius: 3px;
+		.debitCardContent {
+			margin: 21px 15px;
+			height: 42px;
+			position: relative;
+			img {
+				width: 35px;
+			}
+			.bankName {
+				position: absolute;
+				left: 45px;
+				top: 0px;
+				font-size: 16px;
+				color: #333333;
+			}
+			.cardName {
+				position: absolute;
+				left: 45px;
+				top: 20px;
+				font-size: 14px;
+				color: #999999;
+			}
+			.changeBtn {
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #48a13c;
+				a {
+					color: #48a13c;
+				}
+			}
+			.cardNumber {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				color: #48a13c;
+				font-size: 16px;
+			}
 		}
 	}
 	.backBar {

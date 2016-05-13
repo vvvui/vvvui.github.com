@@ -31,7 +31,7 @@ var InstallmentRegister = React.createClass({
                     React.createElement('img', { src: 'img/tipicon.png' })
                 ),
                 React.createElement(
-                    'div',
+                    'span',
                     { className: 'tipText' },
                     '温馨提示：下载APP申请会更加顺畅哦，',
                     React.createElement(

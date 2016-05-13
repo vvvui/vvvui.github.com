@@ -16,6 +16,27 @@ var requireConfig = {
     checkIdCard: {
         url: [jsDir + 'page/checkIdCard.js?' + dirRand]
     },
+    showIdCard: {
+        url: [jsDir + 'page/showIdCard.js?' + dirRand]
+    },
+    selectFace: {
+        url: [jsDir + 'page/selectFace.js?' + dirRand]
+    },
+    selectDebitCard: {
+        url: [jsDir + 'page/selectDebitCard.js?' + dirRand]
+    },
+    setDebitCard: {
+        url: [jsDir + 'page/setDebitCard.js?' + dirRand]
+    },
+    checkDebitCard: {
+        url: [jsDir + 'page/checkDebitCard.js?' + dirRand]
+    },
+    showDebitCard: {
+        url: [jsDir + 'page/showDebitCard.js?' + dirRand]
+    },
+    changeDebitCard: {
+        url: [jsDir + 'page/changeDebitCard.js?' + dirRand]
+    },
     //component
     backBar: {
         url: [jsDir + 'component/backBar.js?' + dirRand]
@@ -116,6 +137,13 @@ var Route = React.createClass({
             case 'installmentRegister': ChildFrom = InstallmentRegister; break;
             case 'selectIdCard': ChildFrom = SelectIdCard; break;
             case 'checkIdCard': ChildFrom = CheckIdCard; break;
+            case 'showIdCard': ChildFrom = ShowIdCard; break;
+            case 'selectFace': ChildFrom = SelectFace; break;
+            case 'selectDebitCard': ChildFrom = SelectDebitCard; break;
+            case 'setDebitCard': ChildFrom = SetDebitCard; break;
+            case 'checkDebitCard': ChildFrom = CheckDebitCard; break;
+            case 'showDebitCard': ChildFrom = ShowDebitCard; break;
+            case 'changeDebitCard': ChildFrom = ChangeDebitCard; break;
             default: ChildFrom = Home; break;
         }
         switch (routeTo) {
@@ -124,6 +152,13 @@ var Route = React.createClass({
             case 'installmentRegister': ChildTo = InstallmentRegister; break;
             case 'selectIdCard': ChildTo = SelectIdCard; break;
             case 'checkIdCard': ChildTo = CheckIdCard; break;
+            case 'showIdCard': ChildTo = ShowIdCard; break;
+            case 'selectFace': ChildTo = SelectFace; break;
+            case 'selectDebitCard': ChildTo = SelectDebitCard; break;
+            case 'setDebitCard': ChildTo = SetDebitCard; break;
+            case 'checkDebitCard': ChildTo = CheckDebitCard; break;
+            case 'showDebitCard': ChildTo = ShowDebitCard; break;
+            case 'changeDebitCard': ChildTo = ChangeDebitCard; break;
         }
         //historyPage = showPage;
         if (ChildTo) {
@@ -132,7 +167,6 @@ var Route = React.createClass({
         } else {
             showPage = routeFrom;
             this.setState({loaded: 1});
-            //requireCheck(allList, function(){});
         }
     },
     animate: function () {
@@ -255,3 +289,5 @@ function render () {
 }
 
 render(); // render initially
+
+requireCheck(allList, function(){});
