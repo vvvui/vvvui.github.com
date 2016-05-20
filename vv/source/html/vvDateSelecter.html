@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>vvSelecter</title>
+		<link rel="stylesheet" type="text/css" href="../css/com/vvCom.css">
+		<!-- js -->
+		<script type="text/javascript" src="../../build/js/min/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/com/vvCom.js"></script>
+		<script type="text/javascript" src="../js/control/vvSelecter.js?1"></script>
+	</head>
+	<body>
+		<div class="vvSelecterTitle">
+			<div style="float:left;" id="startTime">2015-05-14</div>
+			<div style="float:right;" id="endTime">2015-06-15</div>
+		</div>
+		
+		<!-- vvSelecter -->
+		
+		<!-- alertLayer -->
+		<div class="vvSelecterAlertMask" id="vvSelecterAlertMask"></div>
+		<div class="vvSelecterAlert" id="vvSelecterAlert">
+			<div class="vvAlertContent">
+				<div class="alertText">起始日期不能超过结束日期哦！</div>
+				<div class="btnClear" id="alertCheckBtn">知道了</div>
+			</div>
+		</div>
+		<!-- alertLayer end -->
+		
+		<div class="vvSelecterMask" id="vvSelecterMask"></div>
+		<div class="vvSelecterContent" id="vvDateSelecter">
+			<div class="vvSelecterTitle">
+				<div class="lbtn" id="clearBtn">取消</div>
+				<div class="tText">请选择时间</div>
+				<div class="rbtn" id="checkBtn">确定</div>
+			</div>
+			<div class="vvSelecterBk clearFix">
+				<div class="cmask"></div>
+				<div class="vvSelecterList">
+					<div class="vvSelecter" id="vvYearSelecter">
+						<div class="content" id="vvYearSelecterScroll">
+							<div class="option unselect">%tag%</div>
+						</div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<div class="vvSelecterList">
+					<div class="vvSelecter" id="vvMonthSelecter">
+						<div class="content" id="vvMonthSelecterScroll">
+							<div class="option unselect">%tag%</div>
+						</div>
+						<div class="mask"></div>
+					</div>
+				</div>
+				<div class="vvSelecterList">
+					<div class="vvSelecter" id="vvDaySelecter">
+						<div class="content" id="vvDaySelecterScroll">
+							<div class="option unselect">%tag%</div>
+						</div>
+						<div class="mask"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- vvSelecter end -->
+		
+		<script>
+			var timeBegin = '2013-05-13'; // 车辆审核通过时间
+			var timeEnd = '2015-08-12'; // 当前时间
+		</script>
+	</body>
+</html>

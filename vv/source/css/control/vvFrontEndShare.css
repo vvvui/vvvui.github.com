@@ -1,0 +1,59 @@
+.vvSlider .sliderContent {
+	position: relative;
+	width: 800px;
+	height: 600px;
+}
+.p1Title {
+	font-size: 36px;
+	position: absolute;
+	left: 50%;
+	margin-left: -145px;
+	top: 50%;
+	margin-top: -30px;
+}
+.p2Title1 {
+	padding: 10px 30px;
+	border: 1px solid #feeeed;
+	position: absolute;
+	font-size: 36px;
+	color: #FF4040;
+	left: 50%;
+	margin-left: -145px;
+	top: 200px;
+}
+.p2Title2 {
+	padding: 10px 30px;
+	border: 1px solid #F8F8FF;
+	position: absolute;
+	font-size: 36px;
+	color: #C1CDCD;
+	left: 50%;
+	margin-left: -145px;
+	top: 300px;
+}
+.thumbBk {
+	width: 200px;
+	height: 600px;
+	background-color: #ffffff;
+	position:absolute;
+	top: 0px;
+	z-index: 0;
+	left: -210px;
+}
+.thumbBk .thumbPic {
+	padding: 5px 10px;
+	height: 140px;
+	overflow: hidden;
+}
+.thumbBk .thumbPic img {
+	width: 100%;
+	height: 135px;
+	overflow: hidden;
+	pointer-events:none;
+	border: 1px solid #dddddd;
+}
+.thumbList {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}

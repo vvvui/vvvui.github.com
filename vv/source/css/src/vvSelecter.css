@@ -1,0 +1,197 @@
+body,html {
+	background-color : #ffffff;
+}
+.vvSelecterContent {
+	width: 100%;
+	position: absolute;
+	height: 210px;
+	overflow: hidden;
+	top: 100%;
+	background-color: #ffffff;
+	display: none;
+}
+.vvSelecterMask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #000000;
+	opacity: 0.5;
+	top: 0px;
+	display: none;
+}
+.vvSelecterAlertMask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1001;
+	background-color: #000000;
+	opacity: 0.3;
+	top: 0px;
+	display: none;
+}
+.vvAlertContent {
+	padding:20px;
+}
+.vvSelecterAlert {
+	width:80%;
+	background-color:#ffffff;
+	border-radius:5px;
+	position: absolute;
+	left: 50%;
+	margin-left: -40%;
+	top: 50%;
+	margin-top: -65px;
+	z-index: 10001;
+	display: none;
+}
+.vvSelecterAlert .alertText {
+	font-size:14px;
+	color:#3c4041;
+	text-align:center;
+	padding:15px 0 15px 0;
+}
+.vvSelecterAlert .btnClear {
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:18px;
+	color:#55acef;
+	border:1px solid #55acef;
+	text-align:center;
+	border-radius:5px;
+	cursor:pointer;
+}
+.vvSelecterAlert .btnClear:active {
+	background-color:#55acef;
+	color:#ffffff;
+}
+.vvSelecterTitle {
+	padding: 0 15px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 16px;
+}
+.vvSelecterTitle .lbtn {
+	height: 50px;
+	width: 15%;
+	text-align: left;
+	float: left;
+	color: #55acef;
+}
+.vvSelecterTitle .tText {
+	height: 50px;
+	width: 70%;
+	text-align: center;
+	float: left;
+}
+.vvSelecterTitle .rbtn {
+	height: 50px;
+	width: 15%;
+	text-align: right;
+	float: right;
+	color: #55acef;
+}
+.vvSelecterBk {
+	width: 100%;
+	position: absolute;
+	padding: 10px 0px 30px 0px;
+	z-index: 1000;
+	background-color: #ffffff;
+}
+.vvSelecterList {
+	width: 33.3%;
+	position: relative;
+	float: left;
+}
+.vvSelecter {
+	width: 100%;
+	height: 120px;
+	font-size: 16px;
+	background-color: #ffffff;
+	padding: 5px 0;
+	overflow: hidden;
+	position: relative;
+	color: #cccccc;
+}
+.vvSelecter .content {
+	width: 100%;
+	position: absolute;
+} 
+.vvSelecter .content .option {
+	text-align:center;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+}
+.vvSelecterBk .mask {
+	width: 100%;
+	position: absolute;
+	height: 38px;
+	top: 45px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	pointer-events: none;
+}
+.vvSelecterBk .cmask {
+	width: 33.3%;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 33.3%;
+	z-index: 1000;
+	pointer-events: none;
+	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+}
+.vvSelecterBk .maskText {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 70%;
+	color: #3c4041;
+}
+.vvSelecter .checked {
+	color: #3c4041;
+	font-size: 18px;
+}
+.vvSelecterBk .controlBar {
+	padding: 5px 5px;
+	background-color: #55acef;
+	color: #ffffff;
+}
+.vvSelecterBk .controlBar .title {
+	float: left;
+	padding-top: 5px;
+}
+.vvSelecterBk .controlBar .button {
+	float: right;
+	padding: 5px 10px;
+	background-color: #ffffff;
+	color: #999999;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.vvSelecterBk .controlBar .button:active{
+	background-color: #fafafa;
+}
+.vvSelecterBk .mr10 {
+	margin-right: 10px;
+}
+.vvSelecterBk .contentArea {
+	width: 100%;
+	overflow: hidden;
+}
+.vvSelecterBk .marginArea {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+.vvSelecterBk .hourArea {
+	width: 25%;
+	float: left;
+}
+.vvSelecterBk .minuteArea {
+	width: 25%;
+	float: left;
+}

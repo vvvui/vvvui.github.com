@@ -1,0 +1,73 @@
+body,html {
+	width   : 100%;
+	height  : 100%;
+	padding : 0px;
+	margin  : 0px;
+	font-size   : 14px;
+	font-family : "Microsoft YaHei","arial,helvetica,sans-serif";
+	overflow : hidden;
+	background-color : #8e7a7b;
+	color: 3c4041;
+}
+
+a {
+	color : #00aff0;
+}
+a:hover{
+	color : #ee028b;
+}
+
+.loadingLayer {
+	width  : 100%;
+	height : 100%;
+	background-color : #fffffd;
+	z-index  : 999999;
+	position : absolute;
+	top  : 0px;
+	left : 0px;
+}
+
+.loadingLayer .loadingIcon {
+	width  : 32px;
+	height : 32px;
+	position : absolute;
+	top  : 50%;
+	left : 50%;
+	margin : -16px 0 0 -16px;
+	background : url(../../images/loading.gif);
+}
+
+.fl {
+	float : left;
+}
+.fr {
+	float : right;
+}
+.dn {
+	display: none;
+}
+.pa {
+	position: absolute;
+}
+
+.clearFix {
+	*zoom:1;  /* for IE 6 7 */
+}
+.clearFix:before {
+	content : " ";
+	display : block;
+} 
+.clearFix:after {
+	clear   : both;
+	content : " ";
+	display : block;
+}
+.unSelect {
+	user-select : none;
+	-webkit-user-select : none;
+	-moz-user-select : none;
+	moz-user-select  : -moz-none;
+	-o-user-select   : none;
+	-ms-user-select  : none;
+	-khtml-user-select : none;
+}

@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" charset="gbk">
+ws = new WebSocket("ws://10.100.63.153:8080");
+ws.onopen = function(){
+	console.log("handshake");
+}
+ws.onmessage = function(e){
+	var data = eval('(' + e.data + ')');
+	console.log(data.logContent);
+}
+ws.onerror = function(){
+	console.log("error");
+}
+ws.onclose=function(){
+	//ws=false;
+}
+function dosend(){
+	var logContent = document.getElementById("text").value;
+	document.getElementById("text").value = "";
+	ws.send('{"command":"log","action":"showLog","logContent":"' + logContent + '"}');
+	
+}
+
+</script>
+<input id="text">
+<a href="javascript:dosend();">发送</a>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>vvSlider</title>
+		<link rel="stylesheet" type="text/css" href="../css/com/vvCom.css">
+		<!-- js -->
+		<script type="text/javascript" src="../../build/js/min/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../js/com/vvCom.js"></script>
+		<script type="text/javascript" src="../js/control/vvSliderSet.js?v11"></script>
+	</head>
+	<body>
+		
+		<!-- loadingLayer -->
+		<div class="loadingLayer" id="loadingLayer">
+			<div class="loadingIcon"></div>
+		</div>
+		<!-- loadingLayer end -->
+		
+		<!-- vvSlider -->
+		<div id="vvSlider" class="vvSlider">
+			
+			<!-- mainFrames -->
+			<div id="slideFrames">
+				<div class="sp unSelect" id="sp0">
+					<div class="pageTagBg"></div>
+					<div class="pageTag">1</div>
+					<div class="sliderContent">
+						<div class="uuTextObject" style="width:280px; height:168px; left:20px; top:30px; font-size:20px; border:0;">
+							洛<br>丽<br>塔
+						</div>
+						<div class="uuTextObject" style="width:280px; height:165px; left:60px; top:34px; font-size:14px; line-height:16px; color:#cccccc; border:0;">
+							十<br>七<br>岁
+						</div>
+						<div class="uuTextObject" style="width:280px; height:165px; left:80px; top:60px; font-size:14px; line-height:16px; color:#cccccc; border:0;">
+							漫<br>长<br>夏
+						</div>
+						<div class="uuTextObject" style="width:280px; height:165px; left:270px; top:30px; font-size:14px; line-height:16px; color:#cccccc; border:0;">
+							PTU
+						</div>
+						<div class="uuImgObject" style="width:280px; height:165px; left:20px; top:170px;">
+							<img src="../images/vvSlider/1.jpg">
+						</div>
+						<div class="uuImgObject" style="width:280px; height:165px; left:20px; top:343px;">
+							<img src="../images/vvSlider/2.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="sp unSelect" id="sp1">
+					<div class="pageTagBg"></div>
+					<div class="pageTag">2</div>
+					<div class="frameBg"><img src="../images/vvSlider/2.jpg"></div>
+					<div class="sliderContent">
+						
+					</div>
+				</div>
+				<div class="sp unSelect" id="sp2">
+					<div class="pageTagBg"></div>
+					<div class="pageTag">3</div>
+					<div class="frameBg"><img src="../images/vvSlider/3.jpg"></div>
+					<div class="sliderContent">
+						
+					</div>
+				</div>
+				<div class="sp unSelect" id="sp3">
+					<div class="pageTagBg"></div>
+					<div class="pageTag">4</div>
+					<div class="frameBg"><img src="../images/vvSlider/4.jpg"></div>
+					<div class="sliderContent">
+						
+					</div>
+				</div>
+				<div class="sp unSelect" id="sp4">
+					<div class="pageTagBg"></div>
+					<div class="pageTag">5</div>
+					<div class="frameBg"><img src="../images/vvSlider/5.jpg"></div>
+					<div class="sliderContent">
+						
+					</div>
+				</div>
+			</div>
+			<!-- mainFrames end -->
+			
+			<!-- vvMenu -->
+			<div id="vvMenu" class="vvMenu">
+				<div class="menuMaskLayer" id="menuMaskLayer"></div>
+				
+				<!-- content -->
+				<div class="menuContent" id="menuContent">
+					<div class="contentTitle" id="contentTitle">
+						<!-- addTitle -->
+						<div class="titleList addTitle" id="addTitle1">文字</div>
+						<div class="titleList addTitle titleChecked" id="addTitle2">新页面</div>
+						<div class="titleList addTitle" id="addTitle3">组件</div>
+						<!-- addTitle end -->
+						
+						<!-- editTitle -->
+						<div class="titleList editTitle" id="editTitle1">基本信息</div>
+						<div class="titleList editTitle titleChecked" id="editTitle2">切页效果</div>
+						<div class="titleList editTitle" id="editTitle3">全局背景</div>
+						<!-- editTitle end -->
+						
+						<!-- editPageTitle -->
+						<div class="titleList editPageTitle" id="editPageTitle1">页面排序</div>
+						<div class="titleList editPageTitle titleChecked" id="editPageTitle2">更换模板</div>
+						<div class="titleList editPageTitle" id="editPageTitle3">删除页面</div>
+						<!-- editPageTitle end -->
+						
+						<!-- editMusicTitle -->
+						<div class="titleList editMusicTitle" id="editMusicTitle1">添加音乐</div>
+						<div class="titleList editMusicTitle titleChecked" id="editMusicTitle2">音乐搜索</div>
+						<!-- editMusicTitle end -->
+						
+						<div class="titleTag" id="titleTag"></div>
+					</div>
+					
+					<!-- addContent -->
+					
+					<!-- addText -->
+					<div class="contentArea" id="addArea1">
+						<div class="textAreaAddBk">
+							<textarea class="textAreaAdd" placeholder="请输入文字"></textarea>
+						</div>
+					</div>
+					<!-- addText end -->
+					
+					<!-- addPage -->
+					<div class="contentArea" id="addArea2">
+						<div id="pageScroll" class="vvScroll">
+							<div class="listContent clearFix">
+								<div class="list">
+									<div class="content" id="setPage1"><img src="../images/vvMenu/1.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage2"><img src="../images/vvMenu/2.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage3"><img src="../images/vvMenu/3.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage4"><img src="../images/vvMenu/4.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage5"><img src="../images/vvMenu/5.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage6"><img src="../images/vvMenu/6.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage7"><img src="../images/vvMenu/7.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage8"><img src="../images/vvMenu/8.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setPage9"><img src="../images/vvMenu/9.jpg"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- addPage end -->
+					
+					<!-- addComponent -->
+					<div class="contentArea" id="addArea3">
+						
+						<!-- componentList -->
+						<div id="componentScroll" class="vvScroll">
+							<div class="listContent clearFix">
+								<div class="list" id="singlePic">
+									<div class="content borderGrey noEvent">
+										<img src="../images/vvMenu/components/pic.jpg">
+									</div>
+									<div class="text">单图</div>
+								</div>
+								<div class="list" id="multiPic">
+									<div class="content borderGrey noEvent">
+										<img src="../images/vvMenu/components/pic.jpg">
+									</div>
+									<div class="text">多图</div>
+								</div>
+							</div>
+						</div>
+						<!-- componentList end -->
+						
+					</div>
+					<!-- addComponent end -->
+					
+					<!-- addContent end -->
+					
+					<!-- editContent -->
+					
+					<!-- moInfo -->
+					<div class="contentArea" id="editArea1">
+						<div class="inputAddBk">
+							<input class="inputAdd" placeholder="标题">
+						</div>
+						<div class="textAreaAddBk">
+							<textarea class="textAreaAdd" placeholder="描述"></textarea>
+						</div>
+					</div>
+					<!-- moInfo end -->
+					
+					<!-- effectScroll -->
+					<div class="contentArea" id="editArea2">
+						<div id="effectScroll" class="vvScroll">
+							<div class="listContent clearFix">
+								<div class="list">
+									<div class="content borderGrey" id="setEffect0">
+										<img src="../images/vvMenu/effectIcon/0.jpg">
+									</div>
+								</div>
+								<div class="list">
+									<div class="content borderGrey" id="setEffect1">
+										<img src="../images/vvMenu/effectIcon/1.jpg">
+									</div>
+								</div>
+								<div class="list">
+									<div class="content borderGrey" id="setEffect2">
+										<img src="../images/vvMenu/effectIcon/2.jpg">
+									</div>
+								</div>
+								<div class="list">
+									<div class="content borderGrey" id="setEffect3">
+										<img src="../images/vvMenu/effectIcon/3.jpg">
+									</div>
+								</div>
+								<div class="list">
+									<div class="content borderGrey" id="setEffect4">
+										<img src="../images/vvMenu/effectIcon/4.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- effectScroll end -->
+					
+					<!-- bgScroll -->
+					<div class="contentArea" id="editArea3">
+						<div id="bgScroll" class="vvScroll">
+							<div class="listContent clearFix">
+								<div class="list">
+									<div class="content" id="setBg1"><img src="../images/vvMenu/1.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg2"><img src="../images/vvMenu/2.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg3"><img src="../images/vvMenu/3.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg4"><img src="../images/vvMenu/4.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg5"><img src="../images/vvMenu/5.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg6"><img src="../images/vvMenu/6.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg7"><img src="../images/vvMenu/7.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg8"><img src="../images/vvMenu/8.jpg"></div>
+								</div>
+								<div class="list">
+									<div class="content" id="setBg9"><img src="../images/vvMenu/9.jpg"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- bgScroll end -->
+					
+					<!-- editContent end -->
+					
+					<!-- editPageContent -->
+					<div class="contentArea" id="editPageArea1">
+						<div id="pageSetScroll" class="vvScroll">
+							<div class="listContent clearFix">
+								<div class="list w20">
+									<div class="content" id="setPagePos1"><img src="../images/vvMenu/1.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos2"><img src="../images/vvMenu/2.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos3"><img src="../images/vvMenu/3.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos4"><img src="../images/vvMenu/4.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos5"><img src="../images/vvMenu/5.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos6"><img src="../images/vvMenu/6.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos7"><img src="../images/vvMenu/7.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos8"><img src="../images/vvMenu/8.jpg"></div>
+								</div>
+								<div class="list w20">
+									<div class="content" id="setPagePos9"><img src="../images/vvMenu/9.jpg"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contentArea" id="editPageArea3">
+						<div class="deletePageIcon"><img src="../images/vvMenu/delAlertIcon.png"></div>
+						<div class="deletePageText">确定删除当前页面吗？</div>
+						<div class="deletePageBtn">删除</div>
+					</div>
+					<!-- editPageContent end -->
+					
+					<!-- editMusicContent -->
+					<div class="contentArea" id="editMusicArea1">
+						<div class="inputAddBk">
+							<input class="inputAdd" placeholder="歌名">
+						</div>
+						<div class="textAreaAddBk">
+							<textarea class="textAreaAdd" placeholder="MP3地址"></textarea>
+						</div>
+					</div>
+					<div class="contentArea" id="editMusicArea2">
+						<div class="inputAddBk">
+							<input class="inputAdd" placeholder="歌名">
+						</div>
+					</div>
+					<!-- editMusicContent end -->
+					
+				</div>
+				<!-- content end -->
+				
+				<!-- openContent -->
+				<div class="menuContent" id="openContent">
+					<div class="contentTitle" id="singlePicTitle">
+						<div class="titleList componentMenu" id="componentBack">
+							<div class="tl">返回</div>
+						</div>
+						<div class="titleList componentMenu"></div>
+						<div class="titleList componentMenu">
+							<div class="tr">确定</div>
+						</div>
+					</div>
+					<div class="contentArea openArea" id="singlePicArea">
+						<div id="componentSinglePageScroll" class="vvScroll contentAreaOpen">
+							<div class="listContent clearFix">
+								<div class="list" id="singlePic1">
+									<div class="content noEvent">
+										<img src="../images/vvMenu/5.jpg">
+									</div>
+									<div class="text">singlePic1</div>
+								</div>
+								<div class="list" id="singlePic2">
+									<div class="content noEvent">
+										<img src="../images/vvMenu/6.jpg">
+									</div>
+									<div class="text">singlePic2</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contentArea openArea" id="multiPicArea">
+						<div id="componentMultiPicScroll" class="vvScroll contentAreaOpen">
+							<div class="listContent clearFix">
+								<div class="list" id="multiPic1">
+									<div class="content noEvent">
+										<img src="../images/vvMenu/7.jpg">
+									</div>
+									<div class="text">multiPic1</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- openContent end -->
+				
+				<!-- buttonList -->
+				<div class="menuButtons">
+					<div class="editPageBtn menuBtn" id="editPageBtn">
+						<div class="vvMenuIcons editPageIcon"></div>
+					</div>
+					<div class="editMusicBtn menuBtn" id="editMusicBtn">
+						<div class="vvMenuIcons editMusicIcon"></div>
+					</div>
+					<div class="zoomOutBtn menuBtn" id="zoomOutBtn">
+						<div class="vvMenuIcons zoomOutIcon"></div>
+					</div>
+					<div class="zoomInBtn menuBtn" id="zoomInBtn">
+						<div class="vvMenuIcons zoomInIcon"></div>
+					</div>
+					<div class="addBtn menuBtn" id="addBtn">
+						<div class="vvMenuIcons addIcon"></div>
+					</div>
+					<div class="saveBtn menuBtn" id="saveBtn">
+						<div class="vvMenuIcons saveIcon"></div>
+					</div>
+					<div class="editBtn menuBtn" id="editBtn">
+						<div class="vvMenuIcons editIcon"></div>
+					</div>
+				</div>
+				<!-- buttonList end -->
+				
+			</div>
+			
+		</div>
+		<!-- vvSlider end -->
+		<div style="width:320px; position:absolute; z-index:100000; bottom:100px; left:0; display:none;">
+			<div id="preFrame" style="float:left;">pre</div>
+			<div id="FrameCode" style="float:left;">
+				<div class="sliderFrameId" id="sPage0" style="float:left; padding-left:20px;">1</div>
+				<div class="sliderFrameId" id="sPage1" style="float:left; padding-left:20px;">2</div>
+				<div class="sliderFrameId" id="sPage2" style="float:left; padding-left:20px;">3</div>
+				<div class="sliderFrameId" id="sPage3" style="float:left; padding-left:20px;">4</div>
+				<div class="sliderFrameId" id="sPage4" style="float:left; padding-left:20px;">5</div>
+			</div>
+			<div id="nextFrame" style="float:right;">next</div>
+		</div>
+		
+	</body>
+</html>

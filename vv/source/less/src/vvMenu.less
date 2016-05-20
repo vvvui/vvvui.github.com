@@ -1,0 +1,246 @@
+.vvFunBtn(@cl) {
+	width: 40px;
+	height: 40px;
+	background-color: @cl;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 100;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.vvFunIconPos(@pl,@pt) {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background-position : @pl @pt;
+	left: 50%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -15px;
+	background-size: 240px 240px;
+}
+
+.vvMenu {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+	font-size: 14px;
+	top: 0px;
+	left: 0px;
+	
+	.menuBg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		img {
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+	
+	.menuMaskLayer {
+		width: 100%;
+		height: 100%;
+		background-color: #000000;
+		opacity: 0;
+		z-index: 999;
+		position: absolute;
+		display: none;
+	}
+	
+	.menuContent {
+		width: 100%;
+		height: 100%;
+		top: 100%;
+		background-color: #ffffff;
+		z-index: 1001;
+		position: absolute;
+		.contentTitle {
+			width: 100%;
+			height: 40px;
+			position: relative;
+			.titleList {
+				width: 33.3%;
+				height: 40px;
+				float: left;
+				text-align: center;
+				line-height: 40px;
+				border-bottom: 1px solid #f8f8f8;
+				cursor: pointer;
+				.tl {
+					text-align: left;
+					padding-left: 15px;
+				}
+				.tr {
+					text-align: right;
+					padding-right: 15px;
+				}
+			}
+			.titleChecked {
+				color: #45c01a;
+			}
+			.titleTag {
+				width: 33.3%;
+				height: 1px;
+				background-color: #45c01a;
+				position: absolute;
+				top: 40px;
+				z-index: 1001;
+			}
+		}
+		.contentAreaOpen {
+			display: block;
+		}	
+		.contentArea {
+			width: 100%;
+			margin-top: 1px;
+			position: relative;
+			overflow: hidden;
+			.deletePageIcon {
+				position: absolute;
+				width: 150px;
+				height: 150px;
+				left: 50%;
+				top: 50%;
+				margin-top: -130px;
+				margin-left: -75px;
+			}
+			.deletePageIcon img {
+				width: 150px;
+				height: 150px;
+			}
+			.deletePageText {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 160px;
+			}
+			.deletePageBtn {
+				position: absolute;
+				width: 120px;
+				height: 40px;
+				line-height: 40px;
+				color: #ffffff;
+				background-color:#45c01a;
+				border-radius: 5px;
+				text-align: center;
+				left: 50%;
+				margin-left: -60px;
+				top: 190px;
+				cursor: pointer;
+			}
+			.inputAddBk {
+				margin: 0px 10px 10px 10px;
+				position: relative;
+			}
+			.inputAdd {
+				width: 100%;
+				padding: 0px;
+				border: 0px;
+				height: 40px;
+				background-color : transparent;
+				outline : none;
+				resize : none;
+				font-size : 14px;
+				color : #3c4041;
+				overflow : hidden;
+				border-bottom: 1px solid #f8f8f8;
+			}
+			.textAreaAddBk {
+				margin: 10px 10px 10px 10px;
+				position: relative;
+			}
+			.textAreaAdd {
+				width: 100%;
+				padding: 0px;
+				border: 0px;
+				height: 80px;
+				background-color : transparent;
+				outline : none;
+				resize : none;
+				font-size : 14px;
+				color : #3c4041;
+				overflow : hidden;
+				border-bottom: 1px solid #f8f8f8;
+			}
+		}
+		.borderGrey {
+			border: 1px solid #f8f8f8;
+			margin: 6px 3px 0px 3px;
+		}
+	}
+	
+	.menuButtons {
+		width: 100%;
+		height: 100%;
+	}
+	.zoomOutBtn {
+		.vvFunBtn(#feeeed);
+		left: 15px;
+		top: 50%;
+		margin-top: -50px;
+	}
+	.zoomOutIcon {
+		.vvFunIconPos(-90px,-30px);
+	}
+	.zoomInBtn {
+		.vvFunBtn(#cde6c7);
+		left: 15px;
+		top: 50%;
+		margin-top: 20px;
+	}
+	.zoomInIcon {
+		.vvFunIconPos(-150px,-30px);
+	}
+	.addBtn {
+		.vvFunBtn(#fffffd);
+		left: 50%;
+		bottom: 20px;
+		margin-left: -105px;
+	}
+	.addIcon {
+		.vvFunIconPos(0px,0px);
+	}
+	.saveBtn {
+		.vvFunBtn(#feeeed);
+		left: 50%;
+		bottom: 20px;
+		margin-left: -15px;
+	}
+	.saveIcon {
+		.vvFunIconPos(-120px,0px);
+	}
+	.editBtn {
+		.vvFunBtn(#cde6c7);
+		left: 50%;
+		bottom: 20px;
+		margin-left: 75px;
+	}
+	.editIcon {
+		.vvFunIconPos(-60px,0px);
+	}
+	.editPageBtn {
+		.vvFunBtn(#cde6c7);
+		left: 15px;
+		top: 15px;
+	}
+	.editPageIcon {
+		.vvFunIconPos(-30px,-30px);
+	}
+	.editMusicBtn {
+		.vvFunBtn(#fffffd);
+		right: 15px;
+		top: 15px;
+	}
+	.editMusicIcon {
+		.vvFunIconPos(-180px,0px);
+	}
+}
+
+.vvMenuIcons {
+	pointer-events: none;
+	background-image: data-uri('../images/vvMenu/vvMenuIcons.png');
+}
